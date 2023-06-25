@@ -139,10 +139,12 @@ GDAL_LIBRARY_PATH = r'C:\путь_к_GDAL\gdalxxx.dll'
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 SENDGRID_API_KEY = 'YOUR_SENDGRID_API_KEY'
 
-# Дополнительные настройки электронной почты
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = 'YOUR_SENDGRID_API_KEY'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 587
+EMAIL_HOST_USER = 'gurgentadevosyan@mail.ru'  # Ваш адрес электронной почты
+EMAIL_HOST_PASSWORD = 'X4CcJMFTTQTdq7305hjt'  # Ваш пароль от электронной почты
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'gurgentadevosyan@mail.ru'  # Замените на ваш адрес электронной почты
+DEFAULT_FROM_EMAIL = "gurgentadevosyan@mail.ru"
